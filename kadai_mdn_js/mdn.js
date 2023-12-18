@@ -1,5 +1,11 @@
-const today = new Date ();
+const today = new Date();
 
-console.log(today.getFullYear());
-console.log(today.getMonth() +1 );
-console.log(today.getDate());
+let year = today.getFullYear();
+console.log(year + '年');
+
+let month = today.getMonth();
+month = month +1;
+console.log(month + '月');
+
+let date = today.getDate();
+console.log(date + '日');
