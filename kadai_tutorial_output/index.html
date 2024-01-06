@@ -6,6 +6,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+
+        <!-- slickの読み込み -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
     </head>
     <body>
         <header>
@@ -43,12 +48,40 @@
         <main>
             <article>
                 <!--メイン-->
-                <section id="main-visual">
+                <!--<section id="main-visual">
                     <div id="main-message">
                         <h1>WORLD PEACE</h1>
                         <p>IT教育で世界平和を実現する</p>
                     </div>
                     <img src="images/index/index-main.png" alt="PCのまわりに集まる多国籍の仲間たち">
+                </section>-->
+                <!--カルーセル-->
+                <section id="carousel-section">
+                    <div class="carousel">
+                        <div>
+                            <a href="index.html">
+                            <img class="carouselImg" src="images/index/8a607b1d-7225-48d5-bae8-54546fb7a81a.png">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="mission.html">
+                            <img class="carouselImg" src="images/index/c479aefb-545f-456b-ba51-547f5b5d08d5.png">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="product.html">
+                            <img class="carouselImg" src="images/index/7f5918c9-26d0-4080-b6ce-19c6c7011a68.png">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="index.html#company">
+                            <img class="crouselImg" src="images/index/carousel4.png">
+                            </a>
+                        </div>
+                    </div>
                 </section>
                 <!--ミッション-->
                 <section id="mission">
@@ -66,7 +99,7 @@
                             <h3>S2DGsの実現</h3>
                             <p>国連が掲げる「Sustainable Development Goals（持続可能な開発目標）」に含まれる17つのグローバル目標のうち、以下の5つの目標の実現をミッションとしてサービスを展開しています。</p>
                             <a href="mission.html">
-                                <img src="images/button-more.png" alt="もっと見る">
+                                <img class="button-more" src="images/button-more.png" alt="もっと見る">
                             </a>
                         </div>
                     </div>
@@ -113,7 +146,7 @@
                 </div>
                 <div>
                 <a id="product-more" href="product.html">
-                    <img src="images/button-more.png" alt="もっと見る">
+                    <img class="button-more" src="images/button-more.png" alt="もっと見る">
                 </a>
              </div>
                 </section>
@@ -397,5 +430,12 @@
                 </div>
             </footer>
         </main>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <!-- slickの読み込み -->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script src="script.js"></script>
     </body>
 </html>

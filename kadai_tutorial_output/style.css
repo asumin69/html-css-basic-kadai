@@ -6,6 +6,14 @@ p {
 }
 /* pc用のスタイル　*/
 @media screen and (min-width: 768px) {
+  /*PC用カルーセル設定*/
+  .carousel {
+    width: 885px;
+    margin-left: 20px;
+  }
+  .carouselImg {
+    width: 885px;
+  }
   /*PC用ナビゲーション非表示*/
   #nav-sp {
     display: none;
@@ -252,7 +260,7 @@ mission {
 }
 .vision-box > span > h5 {
   font-size: 20px;
-  margin: 0;
+  margin: 0px;
 }
 .vision-box > span > p {
   margin-top: 10px;
@@ -561,6 +569,14 @@ footer {
 
 /*スマホ用*/
 @media screen and (max-width: 767px) {
+  /*スマホ用カルーセル*/
+  .carousel {
+    width: 375px;
+    margin: 0 auto 0 auto;
+  }
+  .carouselImg {
+    width: 375px;
+  }
   #nav-pc {
     display: none;
   }
@@ -570,8 +586,9 @@ footer {
   }
   /*ハンバーガーメニュー*/
   #menu-sp {
-    float: right;
-    padding: 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
   }
   /*表示切替*/
   #nav-sp {
@@ -783,13 +800,13 @@ footer {
   margin-right: 20px;
 }
 .vision-box > span > h4 {
-  color: #2710d5;
+ /* color: #2710d5;*/
   font-size: 19px;
   margin-top: 60px;
 }
-.vision-box > span > h5 {
+.vision-box  span  h5 {
   font-size: 20px;
-  margin: 0;
+  margin: 0px;
 }
 .vision-box > span > p {
   margin-top: 10px;
