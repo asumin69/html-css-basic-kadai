@@ -77,6 +77,10 @@ $(function() {
     $('#agree').click(function(){
         inputCheck();
     });
+    
+    $('#prefecture').click(function() {
+        inputCheck();
+    });
 
     function inputCheck() {
         let result;
