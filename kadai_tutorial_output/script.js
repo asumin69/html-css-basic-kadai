@@ -141,6 +141,16 @@ $(function() {
             message += '個人情報の取り扱いについてご同意いただける場合は、チェックボックスにチェックしてください。 \n';
         }
 
+        //都道府県
+        if ($('#prefecture').val() == '') {
+            $('#prefecture').css('background-color', '#f79999');
+            error = true;
+            message = '都道府県を選択してください。 \n';
+        }
+        else {
+            $('#prefecture').css('background-color', '#fafafa');
+        }
+
         //エラーの有無で送信ボタン切り替え
         if(error == true) {
             $('#submit').attr('src', 'images/button-submit.png');
