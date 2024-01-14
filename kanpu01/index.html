@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Myprofile</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Myplofile">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+         <!--GoogleFonts-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&family=Noto+Sans+JP&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+         <!-- css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+        <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+      
+    </head>
+    <body>
+        <header class="contena">
+         <nav>
+            <div>
+            <a href="index.html" class="myprofile">My Profile</a>
+            </div>
+         <div class="menu">
+            <a href="#about" class="menu1">About</a>
+            <a href="#works" class="menu1">Works</a>
+        </div>
+        </nav>
+    </header>
+        <main>
+            <!--slick-->
+            <ul class="slide-items">
+                <li><img src="images/main.png" alt="カメラ"></li>
+                <li><img src="images/jQuery/main2.png" alt="カメラ"></li>
+                <li><img src="images/jQuery/main3.png" alt="カメラ"></li>
+              </ul>
+              
+                <h1>About</h1>
+                <section id="about" class="contena js-fade">
+                    <img src="images/about.png" alt="男の人の横顔">
+                    <div id="description">
+                        <p>Kazuki Asahina</p>
+                        <div class="description-ul">
+                        <ul>
+                            <li>25歳 長野県佐久市出身</li>
+                            <li>ソフトウェア業界でマーケティングに従事</li>
+                            <li>趣味はカメラ、愛機はCanon</li>
+                            <li>自然を撮影するのが好きで、海や山によく行く</li>
+                        </ul>
+                    </div>
+                </section>
+
+                
+                    <h1>Works</h1>
+                    <section id="works" class="contena js-fade">
+                      
+                    <div class="sample-item">
+                        <a href=""><img src="images/works1.png"></a>
+                        <p>新潟に訪れた際に、日本海の雄大さを魅了されて撮影した1枚</p>
+                    </div>
+
+                    <div class="sample-item">
+                        <a href=""><img src="images/works2.png" alt="御嵩山"></a>
+                        <p>地元長野の木曾町から撮影した、冠雪した御嶽山</p>
+                    </div>
+                    
+                    <div class="sample-item">
+                       <a href=""><img src="images/works3.png" alt="京都"></a>
+                        <p>京都で撮影した、明け方の古き良き日本の町並み</p>
+                     </div>
+                     <!--モーダル-->
+                     <div class="modal close-btn">
+                        <img src="" class="big-img">
+                        <a class="close-btn">✖</a>
+                     </div>
+                    </section>           
+            </main>
+            <footer>
+                <p>&copy; MyProfile. All rights reserved.</p></footer>
+
+                <!--TOPボタン-->
+                <a href="index.html"><button id="page-top">TOP</button></a>
+    </body>
+</html>

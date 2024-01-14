@@ -1,0 +1,143 @@
+/*共通スタイル*/
+ body {
+   font-family: 'Noto Sans JP', sans-serif;
+   color: #000000;
+   background-color: #ffffff;
+   position: relative;
+   padding: 0px;
+   margin: 0px;
+ }
+ .contena {
+   margin: 0 auto;
+   max-width: 1000px;
+ }
+ img {
+   max-width: 100%;
+ }
+ /*pc用*/
+ @media screen and (min-width: 768px){
+nav {
+   display: flex;
+   justify-content: space-between;
+   font-size: 34px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+nav a {
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+}
+.myprofile {
+   border: 1px solid black;
+   padding: 0px 20px;
+   margin-left: 30px;
+}
+.menu a {
+   margin-right: 30px;
+}
+
+#about {
+   margin: 0 auto;
+   text-align: center;
+   display: flex;
+}
+#about img {
+   border-radius: 50%;
+}
+h1 {
+   text-align: center;
+ }
+ .description-ul li{
+   list-style: none;
+ }
+ /*work*/
+ 
+ .sample-item {
+   width: 30%;
+   margin: 10px;
+ }
+ #works {
+   display: flex;
+ }
+  
+ /*JQuery発展*/
+
+ /*slick*/
+ .slide-items {
+ padding: 0;
+ }
+
+ /*TOPボタン*/
+#page-top {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 28px 24px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: opacity 1s,visibility 1s, transform 1s;
+}
+#page-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+#page-top:hover {
+    opacity: .7;
+}
+/*fadein*/
+.js-fade {
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(50px);
+   transition: opacity 1s,visibility 1s, transform 1s;
+}
+
+.scroll {
+   opacity: 1;
+   visibility: visible;
+   transform: translateY(0px);
+}
+/* モーダル */
+ .modal {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.8);
+   display: none;
+ }
+ 
+ .big-img {
+   position: absolute;  
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;  
+   width: 80%;
+   max-width: 800px;  
+   margin: auto;  
+ }
+ 
+ .close-btn {
+   position: absolute;
+   top: 10px;
+   right: 20px;  
+   color: white;
+   font-size: 40px;
+   text-decoration: none;
+ }
+
+}
